@@ -1,0 +1,124 @@
+html, body { 
+  margin:0; 
+  padding:0; 
+  height:100%; 
+  width: 100%;
+
+  min-width:500px;
+  min-height:300px;
+}
+
+
+
+.ucase {  
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.line {
+  display: inline-block;
+}
+
+
+
+.animation {
+    animation-name: example;
+    animation-duration: 1s;
+} 
+
+@keyframes example {
+    0%   { top: -55%;}
+    100% { top: 0px;}
+}
+
+
+
+#get-ticket {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  left: 10px;
+  padding: 0px;
+  border: 0px;
+  height: 50px;
+  z-index: 2;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+#ticket-output {
+  position: relative;
+}
+
+
+.ticket {
+  height:100%; 
+  width: 100%;
+  margin: 0px auto;
+  top: 20%;
+  position: relative;
+  display: block;
+
+  &__main {
+    &-city-info {
+      }
+  }
+
+  &__border {
+    border: solid 5px;
+    padding: 8px 8px 8px 8px;
+  }
+
+  &__header { 
+    background-image: url(../imgs/pattern.png);
+  }
+
+  &__content {
+    padding: 10px;
+    background-image: url(../imgs/pattern.png);
+    height: 100%;
+    width: 100%;
+  }
+
+  &__footer { 
+    background-image: url(../imgs/pattern.png);
+    background-size: cover;
+    display: block;
+    position: relative;
+  }
+
+  &__footer.last-ticket { 
+    background-image: url(../imgs/down.png);
+    background-size: cover;
+  }
+
+  &__series {
+    text-align: center;       
+  }
+
+  &__number {
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+
+
+  @media (max-height: 290px) {
+    &__number {
+      letter-spacing: 0px;
+      font-weight: normal;
+    }
+  }
+
+  @media (max-width: 290px) {
+    &__number {
+      letter-spacing: 0px;
+      font-weight: normal;
+    }
+  }
+}
+
